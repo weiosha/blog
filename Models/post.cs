@@ -4,16 +4,32 @@ namespace BlogApp.Models
     public class Post
     {
         // Unique identifier for each post
-        public int Id { get; set; }
+        private int id;
+        public int Id { 
+            get {return id; } 
+            set {id = value; } 
+        }
         
         // Title of the blog post
-        public string Title { get; set; }
+        public string title = "";
+        public string Title { 
+            get {return title; } 
+            set {title = value; } 
+        }
         
         // Main content of the blog post
-        public string Content { get; set; }
+        private string content = "";
+        public string Content {
+            get {return content; } 
+            set {content = value; } 
+        }
         
         // Author of the blog post
-        public string Author { get; set; }
+        private string author = "";
+        public string Author{
+            get {return author; } 
+            set {title = author; } 
+        }
     }
 }
 
