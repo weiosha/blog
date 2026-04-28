@@ -28,7 +28,7 @@ namespace BlogApp.Models
         private string author = "";
         public string Author{
             get {return author; } 
-            set {title = author; } 
+            set {author = value; } 
         }
     }
 }
